@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:columnCount="1"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:rowCount="1"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
@@ -65,7 +65,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp">
+                app:cardElevation="15dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -133,12 +133,13 @@
                         android:layout_height="wrap_content"
                         android:hint="Secret pin or E-wallet pin"/>
                     <ImageView
-                        android:layout_marginTop="80dp"
-                        android:layout_marginLeft="280dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginBottom="20dp"
                         android:src="@drawable/ic_shopping_basket_black_24dp"
                         android:padding="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:background="@drawable/exchangecircle"/>
                 </LinearLayout>
 
