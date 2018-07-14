@@ -75,7 +75,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:src="@drawable/ic_favorite_black_24dp"
-                        android:background=""
                         android:elevation="10dp"/>
 
                     <TextView
@@ -115,7 +114,7 @@
                         android:src="@drawable/ic_swap_horiz_black_24dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ExchangeCircle"/>
+                        android:background="@drawable/exchangecircle"/>
                 </LinearLayout>
 
 
