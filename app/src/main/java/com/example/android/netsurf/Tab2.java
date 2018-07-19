@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
@@ -72,6 +73,7 @@ public class Tab2 extends Fragment {
         }
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -95,11 +97,11 @@ public class Tab2 extends Fragment {
         pieChart.getDescription().setEnabled(false);
         pieChart.setExtraOffsets(5, 10, 5, 5);
 
-        pieChart.setDragDecelerationFrictionCoef(0.95f);
+        pieChart.setDragDecelerationFrictionCoef(0.99f);
 
         pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleColor(Color.WHITE);
-        pieChart.setTransparentCircleRadius(61f);
+        pieChart.setTransparentCircleRadius(60f);
 
 
         ArrayList<PieEntry> yValues = new ArrayList<>();
@@ -108,18 +110,19 @@ public class Tab2 extends Fragment {
         yValues.add(new PieEntry(24f, "Income"));
         yValues.add(new PieEntry(43f, "Balance"));
 
-        PieDataSet dataSet = new PieDataSet(yValues,"Data Analysis" );
+
+        pieChart.animateY(10000, Easing.EasingOption.EaseOutCubic);
+
+        PieDataSet dataSet = new PieDataSet(yValues,"" );
         dataSet.setSliceSpace(3f);
-        dataSet.setSelectionShift(5f);
-        dataSet.setColors(ColorTemplate.JOYFUL_COLORS);
+        dataSet.setSelectionShift(10f);
+        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
         PieData data = new PieData((dataSet));
         data.setValueTextSize(10f);
         data.setValueTextColor(Color.YELLOW);
 
         pieChart.setData(data);
-
-
     }
 
     @Override

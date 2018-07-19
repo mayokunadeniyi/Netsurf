@@ -172,6 +172,7 @@
             android:layout_gravity="center_horizontal"
             android:text="EXIT"
             android:elevation="15dp"
+            android:id="@+id/closeprofile"
             android:textColor="#FFF"
             android:textSize="15sp"
             android:fontFamily="sans-serif"
