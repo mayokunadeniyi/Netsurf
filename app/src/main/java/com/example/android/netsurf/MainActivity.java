@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
 
 
-        } else if ((userName.equals("Adeniyi.Mayokun")) && (!userPassword.equals("123456"))) {
+        } else if ((userName.equals("Adeniyi.Mayokun")) && (!userPassword.equals("123"))) {
             Toast.makeText(this, "Incorrect Password!", Toast.LENGTH_SHORT).show();
 
-        } else if ((!userName.equals("Adeniyi.Mayokun")) && (userPassword.equals("123456"))) {
+        } else if ((!userName.equals("Adeniyi.Mayokun")) && (userPassword.equals("123"))) {
             Toast.makeText(this, "Incorrect Username", Toast.LENGTH_SHORT).show();
-        } else if ((!userName.equals("Adeniyi.Mayokun")) && (!userPassword.equals("123456"))) {
+        } else if ((!userName.equals("Adeniyi.Mayokun")) && (!userPassword.equals("123"))) {
             Toast.makeText(this, "Incorrect Username and Password", Toast.LENGTH_SHORT).show();
         }
     }
