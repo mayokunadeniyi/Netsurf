@@ -1,12 +1,16 @@
 package com.example.android.netsurf;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.PopupMenu;
 
-public class HomeActivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener {
+public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener,Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener, android.support.v7.widget.PopupMenu.OnMenuItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,7 @@ public class HomeActivity extends AppCompatActivity implements Tab1.OnFragmentIn
         tabLayout.addTab(tabLayout.newTab().setText("Home"));
         tabLayout.addTab(tabLayout.newTab().setText("E-wallet"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
 
         final ViewPager viewPager = (ViewPager)findViewById(R.id.view_id1);
         final PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
@@ -41,9 +46,36 @@ public class HomeActivity extends AppCompatActivity implements Tab1.OnFragmentIn
             }
         });
     }
+    public void showPopUp(View v){
+        android.support.v7.widget.PopupMenu popup = new android.support.v7.widget.PopupMenu(this,v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_menu);
+        popup.show();
+
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                Intent mainIntent1 = new Intent(this, SettingsActivity.class);
+                startActivity(mainIntent1);
+            case R.id.item2:
+                Intent mainIntent2 = new Intent(this, SettingsActivity.class);
+                startActivity(mainIntent2);
+            default:
+                return false;
+
+        }
+    }
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
 }

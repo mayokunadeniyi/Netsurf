@@ -7,6 +7,8 @@ import android.support.v7.widget.PopupMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextClock;
+import android.widget.Toast;
 
 public class LoginHistoryActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -14,6 +16,13 @@ public class LoginHistoryActivity extends AppCompatActivity implements PopupMenu
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_history);
+        TextClock simpleTextClock = (TextClock) findViewById(R.id.textclock1);
+        simpleTextClock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginHistoryActivity.this,"Current System Time!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         ImageView view = (ImageView) findViewById(R.id.cancelimg4);
         view.setOnClickListener(new View.OnClickListener() {
