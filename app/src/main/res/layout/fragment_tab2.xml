@@ -37,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFF"
-                android:elevation="15dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -55,18 +54,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="$1500.00"
-                            android:textColor="#84e69e"
+                            android:textColor="#9fa8da"
+                            android:textStyle="bold"
                             android:layout_marginTop="20dp"
                             android:layout_gravity="center_horizontal"
                             android:textSize="18sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Income"
-                            android:textColor="#000"
+                            android:text="Current Income"
+                            android:textColor="#9fa8da"
                             android:layout_marginTop="10dp"
                             android:textSize="13sp"
+                            android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="sans-serif"/>
                     </LinearLayout>
@@ -80,17 +81,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="$500.00"
+                            android:textStyle="bold"
                             android:layout_marginTop="5dp"
-                            android:textColor="#ff0000"
+                            android:textColor="#9fa8da"
                             android:layout_gravity="center_horizontal"
                             android:textSize="28sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Expense"
+                            android:text="Current Expense"
                             android:textSize="13sp"
-                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textColor="#9fa8da"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="sans-serif"/>
@@ -106,23 +109,42 @@
                             android:layout_height="wrap_content"
                             android:text="$1000.00"
                             android:layout_marginTop="20dp"
-                            android:textColor="#84e69e"
+                            android:textColor="#9fa8da"
+                            android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:textSize="18sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="sans-serif"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Balance"
+                            android:text="Current Balance"
                             android:layout_marginTop="10dp"
                             android:textSize="13sp"
-                            android:textColor="#000"
+                            android:textColor="#9fa8da"
+                            android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="sans-serif"/>
                     </LinearLayout>
 
                 </LinearLayout>
             </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:fontFamily="monospace"
+                android:text="Transaction History"/>
         </android.support.v7.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
@@ -133,112 +155,130 @@
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                android:text="Date: 20th July, 2018"
+                android:text="Date: 10th June, 2018"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif-light"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:id="@+id/date2"
-                android:textColor="#000"
+                android:id="@+id/date"
+                android:textColor="#9fa8da"
                 />
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:layout_margin="15dp"
-                android:orientation="horizontal">
+                android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_attach_money_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Income"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textColor="#000"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="3000.00"
-                        android:id="@+id/income2"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
 
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_attach_money_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#9fa8da"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="3000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/income"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_money_off_black_24dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/expense"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_monetization_on_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Balance"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="2000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/balance"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_money_off_black_24dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Expense"
-                        android:textColor="#000"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="1000.00"
-                        android:id="@+id/expense2"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_monetization_on_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Balance"
-                        android:textColor="#000"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="2000.00"
-                        android:id="@+id/balance1"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+            </android.support.v7.widget.CardView>
         </LinearLayout>
 
-            </LinearLayout>
-
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -248,109 +288,394 @@
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                android:text="Date: 20th July, 2018"
+                android:text="Date: 20th June, 2018"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif-light"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date1"
-                android:textColor="#000"
+                android:textColor="#9fa8da"
                 />
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:layout_margin="15dp"
-                android:orientation="horizontal">
+                android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_attach_money_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Income"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textColor="#000"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="3000.00"
-                        android:id="@+id/income"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_weight="1">
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_money_off_black_24dp"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_attach_money_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#9fa8da"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="2000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/income1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Expense"
-                        android:textColor="#000"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="1000.00"
-                        android:id="@+id/expense1"
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_money_off_black_24dp"/>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_monetization_on_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Balance"
-                        android:textColor="#000"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="2000.00"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/expense1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_monetization_on_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Balance"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1000.00"
+                            android:id="@+id/balance1"
+                            android:textColor="#9fa8da"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
                 </LinearLayout>
-
+            </android.support.v7.widget.CardView>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 3rd July, 2018"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/date2"
+                android:textColor="#9fa8da"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:elevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_attach_money_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#9fa8da"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1500.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/income2"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_money_off_black_24dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1500.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/expense2"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_monetization_on_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Balance"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#9fa8da"
+                            android:text="0.00"
+                            android:id="@+id/balance2"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 12th July, 2018"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/date3"
+                android:textColor="#9fa8da"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:elevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_attach_money_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#9fa8da"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="4000.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/income3"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_money_off_black_24dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#9fa8da"
+                            android:text="2000.00"
+                            android:id="@+id/expense3"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_monetization_on_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Balance"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#9fa8da"
+                            android:text="2000.00"
+                            android:id="@+id/balance3"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -366,105 +691,126 @@
                 android:fontFamily="sans-serif-light"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:id="@+id/date3"
-                android:textColor="#000"
+                android:id="@+id/date4"
+                android:textColor="#9fa8da"
                 />
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:layout_margin="15dp"
-                android:orientation="horizontal">
+                android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_attach_money_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Income"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textColor="#000"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="3000.00"
-                        android:id="@+id/income3"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_weight="1">
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_money_off_black_24dp"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_attach_money_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#9fa8da"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#9fa8da"
+                            android:text="3000.00"
+                            android:id="@+id/income4"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Expense"
-                        android:textColor="#000"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="1000.00"
-                        android:id="@+id/expense3"
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_money_off_black_24dp"/>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_monetization_on_black_24dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Balance"
-                        android:textColor="#000"
-                        android:fontFamily="sans-serif"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25sp"
-                        android:text="2000.00"
-                        android:id="@+id/balance2"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="2500.00"
+                            android:textColor="#9fa8da"
+                            android:id="@+id/expense4"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_monetization_on_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Balance"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="sans-serif"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#9fa8da"
+                            android:text="500.00"
+                            android:id="@+id/balance4"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
                 </LinearLayout>
+            </android.support.v7.widget.CardView>
         </LinearLayout>
-        </LinearLayout>
+
+
 
 
     </LinearLayout>

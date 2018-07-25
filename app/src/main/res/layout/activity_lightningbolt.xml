@@ -13,121 +13,146 @@
         android:layout_marginRight="10dp"
         android:orientation="vertical">
 
-        <com.github.mikephil.charting.charts.LineChart
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/linechart_id">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="20dp">
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/linechart_id"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
 
-        </com.github.mikephil.charting.charts.LineChart>
+            </com.github.mikephil.charting.charts.LineChart>
+        </android.support.v7.widget.CardView>
 
-        <LinearLayout
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#9fa8da"
+            android:elevation="10dp">
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="10dp"
-            android:layout_marginTop="30dp"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:elevation="15dp"
+            android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_marginTop="9dp"
-                android:layout_height="50dp"
-                android:elevation="10dp"
-                android:text="Data Readings"
-                android:textColor="#ffffff"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:textSize="20sp"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 android:elevation="10dp"
-                android:weightSum="3">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:textColor="#ffffff"
-                        android:fontFamily="sans-serif-light"
-                        android:layout_height="match_parent"
-                        android:text="Status:"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textColor="#ffffff"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:text="Active"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
 
-                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:elevation="10dp"
+                    android:weightSum="3">
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:fontFamily="sans-serif-light"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Network Speed:"/>
-                    <TextView
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:elevation="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#9fa8da"
+                            android:drawableLeft="@drawable/ic_nature_people_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="monospace"
+                            android:layout_height="match_parent"
+                            android:text="Status:"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="monospace"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Active"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center"
-                        android:fontFamily="sans-serif-light"
-                        android:text="2Kb/S"/>
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:elevation="20dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="monospace"
+                            android:drawablePadding="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawableLeft="@drawable/ic_wifi_tethering_black_24dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Network Speed:"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:fontFamily="monospace"
+                            android:text="2Kb/S"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:elevation="20dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_router_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#9fa8da"
+                            android:fontFamily="monospace"
+                            android:text="Strength of connection:"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#9fa8da"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="monospace"
+                            android:text="Poor"/>
+                    </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textColor="#ffffff"
-                        android:fontFamily="sans-serif-light"
-                        android:text="Strength of connection:"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="sans-serif-light"
-                        android:text="Poor"/>
-                </LinearLayout>
+
             </LinearLayout>
 
-        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
 
 
     </LinearLayout>
