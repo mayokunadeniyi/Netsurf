@@ -63,7 +63,16 @@ public class Tab1 extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        ImageView profileImage, DataImage, BuyImage, ShareImage, ChangeImage, SettingsImage, LoginImage;
+        ImageView profileImage, DataImage, BuyImage, ShareImage, ChangeImage, SettingsImage, LoginImage, BoltImage;
+
+        BoltImage = (ImageView) getView().findViewById(R.id.lightup);
+        BoltImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(getActivity(), Lightningbolt.class);
+                startActivity(mainIntent);
+            }
+        });
 
         profileImage = (ImageView) getView().findViewById(R.id.profile_id);
         profileImage.setOnClickListener(new View.OnClickListener() {

@@ -15,7 +15,6 @@
         tools:context=".CheckBalanceActivity">
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_gravity="center"
             android:layout_height="match_parent">
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -38,8 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFF"
-                android:layout_marginTop="8dp"
-                android:elevation="10dp"
+                android:elevation="15dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -126,14 +124,347 @@
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-        <android.support.v7.widget.RecyclerView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/data_recyclerview">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 20th July, 2018"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/date2"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
 
-        </android.support.v7.widget.RecyclerView>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_attach_money_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3000.00"
+                        android:id="@+id/income2"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_money_off_black_24dp"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1000.00"
+                        android:id="@+id/expense2"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_monetization_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Balance"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2000.00"
+                        android:id="@+id/balance1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 20th July, 2018"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/date1"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_attach_money_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3000.00"
+                        android:id="@+id/income"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_money_off_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1000.00"
+                        android:id="@+id/expense1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_monetization_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Balance"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2000.00"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 20th July, 2018"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/date3"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_attach_money_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="3000.00"
+                        android:id="@+id/income3"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_money_off_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="1000.00"
+                        android:id="@+id/expense3"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_monetization_on_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Balance"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="2000.00"
+                        android:id="@+id/balance2"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
 
 
     </LinearLayout>

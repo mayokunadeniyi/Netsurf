@@ -100,8 +100,8 @@
                         android:layout_height="wrap_content"
                         android:text="Fill in the form below to share data"
                         android:fontFamily="sans-serif"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginRight="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"/>
                     <EditText
                         android:layout_width="match_parent"

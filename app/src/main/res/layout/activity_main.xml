@@ -2,7 +2,9 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
+    android:background="#afb6c9"
+    android:layout_height="fill_parent"
+
     android:layout_width="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,63 +12,75 @@
     tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
-    tools:ignore="ExtraText">
-
-    <ImageView
+    android:orientation="vertical">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="0dp"
-        android:src="@drawable/ic_public_black_24dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Disp_name"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="90dp"
-        android:fontFamily="sans-serif-heavy"
-        android:layout_gravity="center"
-        />
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_public_black_24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Disp_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="sans-serif-heavy"
+            android:layout_gravity="center"
+            />
 
-    <RelativeLayout
+    </LinearLayout>
+
+    <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="#afb6c9">
+       android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+       android:background="#afb6c9"
+        android:orientation="vertical">
 
 
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginTop="10dp"
+           android:layout_gravity="center"
            android:fontFamily="sans-serif-light"
            android:id="@+id/usser"
            android:text="@string/Sign_id"
            android:layout_centerHorizontal="true"
            android:textSize="20sp" />
-       <EditText
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:hint="@string/User_id"
-           android:textColorHint="@color/colorPrimary"
-           android:textSize="14dp"
-           android:inputType="textCapWords"
-           android:drawableLeft="@drawable/ic_person_outline_black_24dp"
-           android:id="@+id/Username"
-           android:drawablePadding="20dp"
-           android:layout_marginLeft="30dp"
-           android:layout_marginTop="18dp"
-           android:layout_marginRight="30dp"
-           android:textColor="@color/colorPrimary"
-           android:layout_below="@id/usser"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/User_id"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="14dp"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:id="@+id/Username"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/usser"/>
+
+        </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/Username"
+                android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="#000"
                 android:textColor="@color/colorPrimary"
@@ -91,6 +105,7 @@
            android:id="@+id/button1"
            android:layout_height="40dp"
            android:text="@string/Log_id"
+            android:textColor="#000"
            android:background="@drawable/round_button"
            android:fontFamily="sans-serif-light"
            android:layout_centerHorizontal="true"
@@ -98,12 +113,9 @@
            android:layout_marginTop="50dp"
             android:layout_below="@id/mofo"
            android:onClick="validate"
-           android:layout_marginBottom="20dp"
+            android:layout_marginBottom="20dp"
            android:layout_gravity="center"/>
 
-
-   </RelativeLayout>
-
-
+   </LinearLayout>
 </LinearLayout>
 </ScrollView>

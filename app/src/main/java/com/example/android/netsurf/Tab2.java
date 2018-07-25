@@ -30,6 +30,8 @@ import java.util.ArrayList;
  */
 public class Tab2 extends Fragment {
 
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -82,6 +84,7 @@ public class Tab2 extends Fragment {
         return inflater.inflate(R.layout.fragment_tab2, container, false);
         
     }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

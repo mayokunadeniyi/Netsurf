@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lightningbolt">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/linechart_id">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="9dp"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:text="Data Readings"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:elevation="10dp"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="match_parent"
+                        android:text="Status:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Active"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Network Speed:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="2Kb/S"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Strength of connection:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Poor"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

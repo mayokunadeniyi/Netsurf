@@ -153,10 +153,11 @@
                         android:hint="Secret pin or E-wallet pin"/>
                     <ImageView
                         android:layout_marginTop="60dp"
-                        android:layout_marginLeft="220dp"
+                        android:layout_gravity="end"
                         android:layout_marginBottom="20dp"
                         android:src="@drawable/ic_shopping_basket_black_24dp"
                         android:padding="10dp"
+                        android:layout_marginRight="10dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:background="@drawable/exchangecircle"/>
