@@ -35,6 +35,7 @@ public class BuyDataActivity extends AppCompatActivity implements PopupMenu.OnMe
 
     }
 
+
     @Override
     public boolean onMenuItemClick(MenuItem item) {
       switch (item.getItemId()){
@@ -42,7 +43,7 @@ public class BuyDataActivity extends AppCompatActivity implements PopupMenu.OnMe
               Intent mainIntent1 = new Intent(this, SettingsActivity.class);
               startActivity(mainIntent1);
           case R.id.item2:
-              Intent mainIntent2 = new Intent(this, SettingsActivity.class);
+              Intent mainIntent2 = new Intent(this, quit.class);
               startActivity(mainIntent2);
               default:
                   return false;
