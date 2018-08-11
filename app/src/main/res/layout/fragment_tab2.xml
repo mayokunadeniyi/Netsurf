@@ -54,7 +54,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="$1500.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textStyle="bold"
                             android:layout_marginTop="20dp"
                             android:layout_gravity="center_horizontal"
@@ -64,7 +64,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Current Income"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_marginTop="10dp"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -83,7 +83,7 @@
                             android:text="$500.00"
                             android:textStyle="bold"
                             android:layout_marginTop="5dp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center_horizontal"
                             android:textSize="28sp"
                             android:fontFamily="sans-serif"/>
@@ -93,7 +93,7 @@
                             android:text="Current Expense"
                             android:textSize="13sp"
                             android:textStyle="bold"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="sans-serif"/>
@@ -109,7 +109,7 @@
                             android:layout_height="wrap_content"
                             android:text="$1000.00"
                             android:layout_marginTop="20dp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:textSize="18sp"
@@ -120,7 +120,7 @@
                             android:text="Current Balance"
                             android:layout_marginTop="10dp"
                             android:textSize="13sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="sans-serif"/>
@@ -142,7 +142,7 @@
                 android:background="#fff"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="#000"
+                android:textColor="#757575"
                 android:fontFamily="monospace"
                 android:text="Transaction History"/>
         </android.support.v7.widget.CardView>
@@ -161,7 +161,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date"
-                android:textColor="#9fa8da"
+                android:textColor="#757575"
                 />
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -197,14 +197,14 @@
                             android:text="Income"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="3000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/income"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -228,7 +228,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Expense"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
@@ -237,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="1000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/expense"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -261,7 +261,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Balance"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
                         <TextView
@@ -269,7 +269,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="2000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/balance"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -294,7 +294,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date1"
-                android:textColor="#9fa8da"
+                android:textColor="#757575"
                 />
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -330,14 +330,14 @@
                             android:text="Income"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="2000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/income1"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -361,7 +361,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Expense"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
@@ -370,7 +370,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="1000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/expense1"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -394,7 +394,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Balance"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
                         <TextView
@@ -403,7 +403,7 @@
                             android:textSize="18sp"
                             android:text="1000.00"
                             android:id="@+id/balance1"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-light"/>
@@ -427,7 +427,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date2"
-                android:textColor="#9fa8da"
+                android:textColor="#757575"
                 />
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -463,14 +463,14 @@
                             android:text="Income"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="1500.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/income2"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -494,7 +494,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Expense"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
@@ -503,7 +503,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="1500.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/expense2"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -527,14 +527,14 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Balance"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:text="0.00"
                             android:id="@+id/balance2"
                             android:layout_marginTop="10dp"
@@ -560,7 +560,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date3"
-                android:textColor="#9fa8da"
+                android:textColor="#757575"
                 />
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -596,14 +596,14 @@
                             android:text="Income"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="4000.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/income3"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -627,7 +627,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Expense"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
@@ -635,7 +635,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:text="2000.00"
                             android:id="@+id/expense3"
                             android:layout_marginTop="10dp"
@@ -660,14 +660,14 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Balance"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:text="2000.00"
                             android:id="@+id/balance3"
                             android:layout_marginTop="10dp"
@@ -692,7 +692,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/date4"
-                android:textColor="#9fa8da"
+                android:textColor="#757575"
                 />
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -728,13 +728,13 @@
                             android:text="Income"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:text="3000.00"
                             android:id="@+id/income4"
                             android:layout_marginTop="10dp"
@@ -759,7 +759,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Expense"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
@@ -768,7 +768,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="2500.00"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:id="@+id/expense4"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center"
@@ -792,14 +792,14 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Balance"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:fontFamily="sans-serif"
                             android:textSize="14sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
-                            android:textColor="#9fa8da"
+                            android:textColor="#757575"
                             android:text="500.00"
                             android:id="@+id/balance4"
                             android:layout_marginTop="10dp"

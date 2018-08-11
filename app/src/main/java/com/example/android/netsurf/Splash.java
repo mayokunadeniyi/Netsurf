@@ -1,40 +1,42 @@
 package com.example.android.netsurf;
 
 import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.FrameLayout;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Splash extends AppCompatActivity {
-
-    AnimationDrawable animationDrawable;
-    FrameLayout frameLayout;
-    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        button = (Button) findViewById(R.id.startingbutton);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        ImageView imageView = findViewById(R.id.splashimg);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.mainanim);
+        imageView.startAnimation(animation);
+
+        Thread thread = new Thread(){
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Splash.this,MainActivity.class);
-                startActivity(intent);
+            public void run() {
+                try {
+                    sleep(7000);
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                    super.run();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
             }
-        });
+        };
 
-        frameLayout = (FrameLayout)findViewById(R.id.myFrameLayout);
-        animationDrawable = (AnimationDrawable)frameLayout.getBackground();
+        thread.start();
 
-        animationDrawable.setEnterFadeDuration(5000);
-        animationDrawable.setExitFadeDuration(2000);
 
-        animationDrawable.start();
-
-        }
-
+    }
 }

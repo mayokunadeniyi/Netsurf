@@ -69,16 +69,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:orientation="horizontal"
-                    android:background="#9fa8da"></LinearLayout>
                 <ImageView
                     android:layout_width="170dp"
                     android:padding="5dp"
                     android:elevation="15dp"
-                    android:layout_marginTop="50dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/biggercircle"
                     android:layout_height="170dp" />
@@ -86,7 +80,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:elevation="16dp"
-                    android:layout_marginTop="110dp"
+                    android:layout_marginTop="60dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_info_black_24dp"
                     />
@@ -95,12 +89,12 @@
                     android:layout_height="wrap_content"
                     android:text="V 1.0.0"
                     android:textSize="15sp"
-                    android:textColor="#9fa8da"
+                    android:textColor="#757575"
                     android:elevation="16dp"
                     android:textStyle="bold"
                     android:fontFamily="sans-serif"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="170dp"/>
+                    android:layout_marginTop="120dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -108,7 +102,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="5dp"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="128dp"
                     android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
