@@ -29,6 +29,7 @@
                     android:background="@drawable/smallcircle"
                     android:layout_height="100dp" />
                 <TextView
+                    android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Username"
@@ -134,24 +135,24 @@
             android:layout_marginTop="30dp"
             android:orientation="vertical">
             <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-            android:text="adeniyi.mayokun@lmu.edu.ng"
-                android:fontFamily="sans-serif"
-            android:drawablePadding="20dp"
-            android:drawableLeft="@drawable/ic_mail_black_24dp"/>
-            <TextView
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dept_id"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"/>
+            <TextView
+                android:id="@+id/matnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:drawablePadding="20dp"
                 android:drawableLeft="@drawable/ic_local_library_black_24dp"/>
             <TextView
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Joseph Hall"
                 android:layout_marginBottom="20dp"
                 android:drawablePadding="20dp"
                 android:drawableLeft="@drawable/ic_home_black_24dp"/>

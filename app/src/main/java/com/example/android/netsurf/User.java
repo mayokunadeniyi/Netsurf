@@ -1,20 +1,35 @@
 package com.example.android.netsurf;
 
-import com.google.gson.annotations.SerializedName;
-
 public class User {
 
-    @SerializedName("response")
-    private String Response;
+    private int id;
+    private String name, email, matnum, username;
 
-    @SerializedName("id")
-    private String UserID;
-
-    public String getResponse() {
-        return Response;
+    public User(int id, String name, String email, String matnum, String username) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.matnum = matnum;
+        this.username = username;
     }
 
-    public String getUserID() {
-        return UserID;
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getMatnum() {
+        return matnum;
+    }
+
+    public String getUsername() {
+        return username;
     }
 }

@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
 
+import static com.example.android.netsurf.SharedPrefManager.*;
+
 public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener,Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener, android.support.v7.widget.PopupMenu.OnMenuItemClickListener {
 
     @Override
@@ -19,7 +21,7 @@ public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.Tab_id);
         tabLayout.addTab(tabLayout.newTab().setText("Home"));
-        tabLayout.addTab(tabLayout.newTab().setText("E-wallet"));
+        tabLayout.addTab(tabLayout.newTab().setText("E-Wallet"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
 
@@ -46,6 +48,17 @@ public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             }
         });
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(!getInstance(this).isLoggedIn()){
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+    }
+
     public void showPopUp(View v){
         android.support.v7.widget.PopupMenu popup = new android.support.v7.widget.PopupMenu(this,v);
         popup.setOnMenuItemClickListener(this);
