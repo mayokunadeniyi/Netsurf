@@ -9,7 +9,7 @@ public class ApiClient {
     private static final String BASE_URL = "http://192.168.43.37/MyApi/public/";
 
     //MAYOKUNS LOCALHOST SERVER ACCESS CHANGE localhost to IPCONFIG OF YOUR PHONES HOTSPOT
-    //private static final String BASE_URL = "http://localhost/MyApi/public/";
+    //private static final String BASE_URL = "http://127.0.0.1/MyApi/public/";
     private static ApiClient mInstance;
     private Retrofit retrofit;
 

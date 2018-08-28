@@ -30,13 +30,9 @@ public class quit extends AppCompatActivity {
 
 
     public void displayPopUp(View view) {
-
-
         myDialog.setContentView(R.layout.activity_quit);
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
         myDialog.show();
-
-
     }
 
     public void closer1(View view) {
@@ -53,15 +49,12 @@ public class quit extends AppCompatActivity {
     public void yes1(View view) {
         Button bntflow2;
         bntflow2 = (Button) myDialog.findViewById(R.id.yesbutt1);
-
-
         bntflow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 logout();
             }
         });
-
     }
 
     public void no1(View view) {
@@ -100,7 +93,8 @@ public class quit extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<LogoutResponse> call, Throwable t) {
-
+                progressDialog.dismiss();
+                Toast.makeText(quit.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

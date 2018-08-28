@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private  void login(){
-        final ProgressDialog progressDialog= new ProgressDialog(this);
+    private void login(){
+        final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Logging In...");
         progressDialog.show();
 
@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-
+                progressDialog.dismiss();
+                Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

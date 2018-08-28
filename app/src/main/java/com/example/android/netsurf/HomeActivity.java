@@ -9,8 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
-
 import static com.example.android.netsurf.SharedPrefManager.*;
+
 
 public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener,Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener, android.support.v7.widget.PopupMenu.OnMenuItemClickListener {
 
@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 Intent mainIntent1 = new Intent(this, SettingsActivity.class);
                 startActivity(mainIntent1);
             case R.id.item2:
-                Intent mainIntent2 = new Intent(this, SettingsActivity.class);
+                Intent mainIntent2 = new Intent(this, quit.class);
                 startActivity(mainIntent2);
             default:
                 return false;
