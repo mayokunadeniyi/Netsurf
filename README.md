@@ -1,3 +1,3 @@
 # Netsurf
-Netsurf Android Application still in progress..
+Netsurf Android Application 
 
